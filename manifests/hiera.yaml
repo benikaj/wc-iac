@@ -1,0 +1,15 @@
+:backends:
+  - yaml
+
+:hierarchy:
+  - %{clientcert}
+  - os-%{osfamily}
+  - common
+
+:yaml:
+   #:datadir: /etc/puppet/hieradata
+   # A good alternative if you want different node data based on environments:
+   :datadir: "C:\ProgramData\Git\wc-iac\environments\%{environment}\hieradata"
+
+:puppet:
+   :datasource: data

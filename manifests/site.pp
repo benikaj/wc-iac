@@ -1,1 +1,1 @@
-import "nodes/*.pp" 
+hiera_include(classes)
